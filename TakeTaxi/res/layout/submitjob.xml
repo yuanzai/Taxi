@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/waiting_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#444444"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/bCancelCall"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/left_custom_button"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="0.2"
+                    android:text="Cancel"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Map Address"
+                    android:textSize="16dp" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/bOK"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/right_custom_button"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="0.2"
+                    android:text="Flag"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Geocoded Map Address"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="Details for pickup location"
+                android:textSize="16dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/etPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter details for the driver"
+                android:inputType="textMultiLine"
+                android:maxLines="3" >
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="Destination"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

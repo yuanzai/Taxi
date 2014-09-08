@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mvOnroute"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0uj7VY-2WNi9xwX0BqcydykfOPwGtuO41RWJq8Q"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/jobLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <com.TaxiDriver.view.TransparentPanel
+                android:id="@+id/transparent_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/bORnoshow"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="0.2"
+                    android:text="Cancel"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Counter" />
+
+                <Button
+                    android:id="@+id/bORcall"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="0.2"
+                    android:text="Call"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </com.TaxiDriver.view.TransparentPanel>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.TaxiDriver.view.TransparentPanel
+                android:id="@+id/transparent_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="4dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pick up from"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTopLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Geocoder Address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvMidLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Pickup Details"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Going to"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tvBotLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Destination"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </com.TaxiDriver.view.TransparentPanel>
+
+            <com.TaxiDriver.view.TransparentPanel
+                android:id="@+id/transparent_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:padding="4dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                                        android:textSize="16dp"
+                    android:text="97%" />
+            </com.TaxiDriver.view.TransparentPanel>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.TaxiDriver.view.TransparentPanel
+        android:id="@+id/transparent_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+                    android:layout_alignParentBottom="true"
+        android:gravity="center"
+         >
+
+        <Button
+            android:id="@+id/bORpicked"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+                                android:background="@drawable/custom_button"
+            
+            android:text="Passenger Picked"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-1"
+                    android:shadowRadius="0.2"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+            
+             />
+    </com.TaxiDriver.view.TransparentPanel>
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pref"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+  <ScrollView android:id="@+id/ScrlView" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:padding="5dp">
+        
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+             />
+        <TextView
+            android:id="@+id/tvNRIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NRIC" />
+
+        <EditText
+            android:id="@+id/etNRIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            
+            />
+        
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numeric="integer" />
+
+
+
+        <TextView
+            android:id="@+id/tvLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="License Plate Number" />
+
+        <EditText
+            android:id="@+id/etLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ />
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxi Company" />
+
+        <Spinner
+            android:id="@+id/spinCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxi Type" />
+
+        <Spinner
+            android:id="@+id/spinType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cbTnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and agree to the Terms and Conditions of the service.." 
+            android:visibility="gone"
+            />
+        
+                <TextView
+            android:id="@+id/tvPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" 
+            android:visibility="gone"
+            />
+        
+    
+    
+    
+    
+
+    <LinearLayout
+        android:id="@+id/bm"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bPrefOK"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="Start!" />
+
+                <Button
+            android:id="@+id/bPrefClear"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="Clear!" />
+        </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

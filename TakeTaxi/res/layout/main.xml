@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mvMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bm"
+        android:layout_alignParentTop="true"
+        android:apiKey="0uj7VY-2WNi-w6Sq5ZzqqjTL7ndiRJVue4UQt8A"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/maintopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.TakeTaxi.view.TransparentPanel
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/tvNearest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bFlag"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/custom_button"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:shadowColor="#FF000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="0.2"
+                android:text="Flag"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </com.TakeTaxi.view.TransparentPanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/starbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/maintopbar"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/starwhole" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/starwhole" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/starwhole" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/starwhole" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/starwhole" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainmenubar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.TakeTaxi.view.TransparentPanel
+            android:id="@+id/transparent_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:weightSum="1" >
+
+            <ImageButton
+                android:id="@+id/ibProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/profile"
+                android:padding="25dp"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/bBroadcast"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:shadowColor="#FF000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="0.2"
+                android:text="Pick me from here"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <!-- android:background="@drawable/custom_button" -->
+
+            <ImageButton
+                android:id="@+id/ibMap"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/map"
+                android:padding="25dp"
+                android:scaleType="fitCenter" />
+        </com.TakeTaxi.view.TransparentPanel>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mainmenubar"
+        android:orientation="vertical" >
+
+        <com.TakeTaxi.view.TransparentPanel
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tvCurrentGeocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </com.TakeTaxi.view.TransparentPanel>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/greendot"
+        android:visibility="gone" />
+</RelativeLayout>

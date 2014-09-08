@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mvOnroute"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bOnrouteCancelCall"
+        android:layout_alignParentTop="true"
+        android:apiKey="0uj7VY-2WNi-w6Sq5ZzqqjTL7ndiRJVue4UQt8A"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/onroutetopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.TakeTaxi.view.TransparentPanel
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/tvORTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bOnrouteCancelCall"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/custom_button"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:shadowColor="#FF000000"
+                android:shadowDx="0"
+                android:shadowDy="-1"
+                android:shadowRadius="0.2"
+                android:text="Cancel"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </com.TakeTaxi.view.TransparentPanel>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/onroutebotbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <com.TakeTaxi.view.TransparentPanel
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1" >
+
+            <com.TakeTaxi.view.WhitePanel
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvTaxiLicense"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </com.TakeTaxi.view.WhitePanel>
+
+            <TextView
+                android:id="@+id/tvTaxiType"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:text=""
+                android:textSize="20dp" />
+        </com.TakeTaxi.view.TransparentPanel>
+    </LinearLayout>
+
+</RelativeLayout>
